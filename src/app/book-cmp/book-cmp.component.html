@@ -1,0 +1,91 @@
+<p>
+  book-cmp works!
+</p>
+<style>
+    .grid-container {
+      display: grid;
+      grid-template-columns: auto auto auto;
+      background-color: #2196F3;
+      padding: 10px;
+    }
+    .grid-item {
+      background-color: rgba(255, 255, 255, 0.8);
+      border: 1px solid rgba(0, 0, 0, 0.8);
+      padding: 30px;
+      font-size: 30px;
+      text-align: center;
+    }
+    </style>
+    
+        <div style="text-align:center">
+            <h1>
+              Welcome to {{ title }}!
+            </h1>
+          </div>
+    
+    <h1>Comic Books</h1>
+    
+    
+    
+    <div class="grid-container">
+        
+      <div class="grid-item"> <img class="img" src="../assets/Images/img1.jpg" >
+        
+      <p>Cutie-Pie</p>
+      
+      <input class="btn" [value]="likes">
+      <button (click)="likes = likes +1">Like</button>
+      
+
+      </div>
+    
+      <div class="grid-item"> <img  class="img" src="../assets/Images/img2.jpg" >
+      <p>Tiny-Titans</p>
+      <input class="btn" [value]="likes2">
+      <button (click)="likes2 = likes2+1">Like</button>
+      </div>
+    
+      <div class="grid-item"> <img   class="img" src="../assets/Images/img3.jpg" >
+        <p>Superman Family Adventures</p>
+        <input class="btn" [value]="likes3">
+        <button (click)="likes3 = likes3+1">Like</button>
+      </div>  
+    
+      <div class="grid-item"><img class="img" src="../assets/Images/img4.jpg" >
+        <p>Cave Kids</p>
+        <input class="btn" [value]="likes4">
+            <button (click)="likes4 = likes4 +1">Like</button>
+      </div>
+    
+      <div class="grid-item"><img  class="img" src="../assets/Images/img5.jpg" >
+        
+        <p>Flintstone Kids</p>
+        <input class="btn" [value]="likes5">
+      <button (click)="likes5 = likes5 +1">Like</button>
+      </div>
+    
+      <div class="grid-item"><img class="img"src="../assets/Images/img6.jpg" >
+        <p>Compass South</p>
+        <input class="btn" [value]="likes6">
+        <button (click)="likes6 = likes6 +1">Like</button>
+      </div> 
+    
+      <div class="grid-item"><img class="img"src="../assets/Images/img7.jpg">
+        <p>Adventures of Zack and Mak</p>
+        <input class="btn" [value]="likes7">
+      <button (click)="likes7 = likes7+1">Like</button>
+      </div>
+    
+      <div class="grid-item"><img class="img"src="../assets/Images/img8.jpg" >
+        <p>History of Comic Books</p>
+        <input class="btn" [value]="likes8">
+        <button (click)="likes8 = likes8 +1">Like</button>
+      </div>
+    
+      <div class="grid-item"> <img class="img"src="../assets/Images/img9.jpg">
+        <p>The Legend of Korra</p>
+        <input class="btn" [value]="likes9">
+      <button (click)="likes9 = likes9  +1">Like</button>
+         
+      </div> </div> 
+      <router-outlet></router-outlet>

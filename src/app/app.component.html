@@ -1,21 +1,101 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/cli">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+
+<style>
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: #2196F3;
+  padding: 10px;
+}
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 30px;
+  font-size: 30px;
+  text-align: center;
+}
+</style>
+
+    <div style="text-align:center">
+        <h1>
+          Welcome to {{ title }}!
+        </h1>
+      </div>
+
+<h1>Comic Books</h1>
+
+
+
+<div class="grid-container">
+    
+  <div class="grid-item"> <img class="img" src="../assets/Images/img1.jpg" >
+    
+  <p>Cutie-Pie</p>
+  
+  <input class="btn" [value]="likes">
+  <button (click)="likes = likes +1">Like</button>
+  <a routerLink="book-cmp">click</a>
+  </div>
+
+  <div class="grid-item"> <img  class="img" src="../assets/Images/img2.jpg" >
+  <p>Tiny-Titans</p>
+  <input class="btn" [value]="likes2">
+  <button (click)="likes2 = likes2+1">Like</button>
+  <a routerLink="book-cmp">click</a>
+  </div>
+
+  <div class="grid-item"> <img   class="img" src="../assets/Images/img3.jpg" >
+    <p>Superman Family Adventures</p>
+    <input class="btn" [value]="likes3">
+    <button (click)="likes3 = likes3+1">Like</button>
+    <a routerLink="book-cmp">click</a>
+  </div>  
+
+  <div class="grid-item"><img class="img" src="../assets/Images/img4.jpg" >
+    <p>Cave Kids</p>
+    <input class="btn" [value]="likes4">
+        <button (click)="likes4 = likes4 +1">Like</button>
+        <a routerLink="book-cmp">click</a>
+  </div>
+
+  <div class="grid-item"><img  class="img" src="../assets/Images/img5.jpg" >
+    
+    <p>Flintstone Kids</p>
+    <input class="btn" [value]="likes5">
+  <button (click)="likes5 = likes5 +1">Like</button>
+  <a routerLink="book-cmp">click</a>
+  </div>
+
+  <div class="grid-item"><img class="img"src="../assets/Images/img6.jpg" >
+    <p>Compass South</p>
+    <input class="btn" [value]="likes6">
+    <button (click)="likes6 = likes6 +1">Like</button>
+  <a routerLink="book-cmp">click</a>
+
+  </div> 
+
+  <div class="grid-item"><img class="img"src="../assets/Images/img7.jpg">
+    <p>Adventures of Zack and Mak</p>
+    <input class="btn" [value]="likes7">
+  <button (click)="likes7 = likes7+1">Like</button>
+  <a routerLink="book-cmp">click</a>
+
+  </div>
+
+  <div class="grid-item"><img class="img"src="../assets/Images/img8.jpg" >
+    <p>History of Comic Books</p>
+    <input class="btn" [value]="likes8">
+    <button (click)="likes8 = likes8 +1">Like</button>
+  <a routerLink="book-cmp">click</a>
+
+  </div>
+
+  <div class="grid-item"> <img class="img"src="../assets/Images/img9.jpg">
+    <p>The Legend of Korra</p>
+    <input class="btn" [value]="likes9">
+  <button (click)="likes9 = likes9  +1">Like</button>
+  <a routerLink="book-cmp">click</a>
+
+     
+  </div> </div> 
 
 <router-outlet></router-outlet>
